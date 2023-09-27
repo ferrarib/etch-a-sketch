@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 16px;
+}
+
+.header > button {
+    border: 1px solid white;
+    color: black;
+    background-color: whitesmoke;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.header > button:hover {
+    background-color: rgb(182, 181, 181);
+    cursor: pointer;
+}
+
+#grid-container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    padding: 5vw;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    flex: 1;
+}
+
+.grid-cell {
+    display: flex;
+    flex: 1;
+}
+
+.grid-cell-hover {
+    background-color: black;
+}
