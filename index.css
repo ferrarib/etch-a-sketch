@@ -1,38 +1,57 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-.header {
-    display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 100vh;
+    /* background-color: #430f58; */
+    background-color: #d5def5;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    gap: 16px;
 }
 
-.header > button {
-    border: 1px solid white;
+.container {
+    display: flex;
+    width: 80vh;
+    height: 80vh;
+    gap: 2vw;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8594e4;
+    /* background-color: #6643b5; */
+    border-radius: 16px;
+}
+
+.buttons > button {
+    /* border: 1px solid white; */
+    color: white;
+    background-color: #6643b5;
+    border-style: none;
+    padding: 12px 28px;
+    margin: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.buttons > button:hover {
+    background-color: #d5def5;
     color: black;
-    background-color: whitesmoke;
-    padding: 12px;
-    border-radius: 4px;
-}
-
-.header > button:hover {
-    background-color: rgb(182, 181, 181);
     cursor: pointer;
 }
 
 #grid-container {
     display: flex;
-    width: 100vw;
-    height: 90vh;
-    padding: 5vw;
+    flex: 8;
     box-sizing: border-box;
     flex-direction: column;
+    border: 16px solid #6643b5;
+    border-radius: 12px;
 }
 
 .grid-row {
@@ -46,5 +65,5 @@ body {
 }
 
 .grid-cell-hover {
-    background-color: black;
+    background-color: #430f58;
 }
